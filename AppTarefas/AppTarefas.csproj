@@ -1,9 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Views\Home\img\**" />
+		<Compile Remove="Views\NovaPasta\**" />
+		<Compile Remove="wwwroot\NovaPasta\**" />
+		<Content Remove="Views\Home\img\**" />
+		<Content Remove="Views\NovaPasta\**" />
+		<Content Remove="wwwroot\NovaPasta\**" />
+		<EmbeddedResource Remove="Views\Home\img\**" />
+		<EmbeddedResource Remove="Views\NovaPasta\**" />
+		<EmbeddedResource Remove="wwwroot\NovaPasta\**" />
+		<None Remove="Views\Home\img\**" />
+		<None Remove="Views\NovaPasta\**" />
+		<None Remove="wwwroot\NovaPasta\**" />
+	</ItemGroup>
 
 </Project>
